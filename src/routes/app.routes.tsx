@@ -19,10 +19,10 @@ function AppRoutes() {
                 }}
                 initialRouteName={'SignUp'}
             >
-                <Stack.Screen 
-                   name="SignUp" 
-                   component={SignUp}
-                />
+                    <Stack.Screen 
+                        name="SignUp" 
+                        component={SignUp}
+                    />
             </Stack.Navigator >
         </NavigationContainer>
     );
