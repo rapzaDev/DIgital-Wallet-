@@ -1,14 +1,13 @@
 import React from 'react';
 import { Image } from 'react-native';
 import { useTheme } from 'styled-components';
-import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator, BottomTabBar } from '@react-navigation/bottom-tabs';
-import { isIphoneX } from 'react-native-iphone-x-helper';
 import { icons } from '../../utils';
 
 import Home from '../../screens/Home';
 import Scan from '../../screens/Scan';
 import TabBarCustomButton from '../../components/TabBarCustomButton';
+import CustomTabBar from '../../components/CustomTabBar';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -28,6 +27,9 @@ function Tabs() {
                     elevation: 0
                 },
             }}
+            tabBar={(props) => (
+                <CustomTabBar {...props} />
+            )}
         >
             <Screen 
                 name='Home'
