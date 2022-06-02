@@ -48,8 +48,9 @@ import {
     ModalItemText,
 } from './styles';
 
-function SignUp() {
+function SignUp({navigation} : any) {
     const theme = useTheme();
+    
     const { 
         pssVisible, 
         setPssVisible, 
@@ -174,7 +175,7 @@ function SignUp() {
     const renderButton = useCallback(() => {
         return (
             <ButtonView>
-                <Button onPress={() => console.log("Navigate to home")}>
+                <Button onPress={() => navigation.navigate("Home")}>
                     <ButtonText style={{...theme.fonts.h3}}>Continue</ButtonText>
                 </Button>
             </ButtonView>

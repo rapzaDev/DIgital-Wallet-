@@ -117,6 +117,17 @@ export default {
         body3: FONTS.body3,
         body4: FONTS.body4,
         body5: FONTS.body5,
+    },
+
+    shadow: {
+        shadowColor: COLORS.primary,
+        shadowOffset: {
+            width: 0,
+            height: 10,
+        },
+        shadowCapacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 5
     }
 }
 
