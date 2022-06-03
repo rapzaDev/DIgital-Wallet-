@@ -2,8 +2,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 
 import SignUp from '../screens/SignUp';
-import Home from '../screens/Home';
-import Scan from '../screens/Scan';
 import Tabs from './tabs';
 
 const Stack = createStackNavigator();
