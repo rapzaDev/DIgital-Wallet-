@@ -17,7 +17,7 @@ function AppRoutes() {
             >
                 <Stack.Screen name="SignUp" component={SignUp}/>
 
-                <Stack.Screen name="Home" component={Tabs} />
+                <Stack.Screen  name="Home" component={Tabs} />
             </Stack.Navigator >
         </NavigationContainer>
     );

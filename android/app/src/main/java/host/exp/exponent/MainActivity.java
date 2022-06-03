@@ -1,4 +1,4 @@
-package com.300522;
+package host.exp.exponent;
 
 import android.os.Build;
 import android.os.Bundle;

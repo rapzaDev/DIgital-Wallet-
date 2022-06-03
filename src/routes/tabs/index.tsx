@@ -26,6 +26,7 @@ function Tabs() {
                     backgroundColor: "transparent",
                     elevation: 0
                 },
+                headerShown: false,
             }}
             tabBar={(props) => (
                 <CustomTabBar {...props} />
@@ -52,7 +53,7 @@ function Tabs() {
                        <TabBarCustomButton 
                             {...props}
                        /> 
-                    )
+                    ),
                 }}
             />
 
@@ -77,7 +78,7 @@ function Tabs() {
                        <TabBarCustomButton 
                             {...props}
                        /> 
-                    )
+                    ),
                 }}
             />
 
@@ -102,7 +103,7 @@ function Tabs() {
                        <TabBarCustomButton 
                             {...props}
                        /> 
-                    )
+                    ),
                 }}
             />
         </Navigator>

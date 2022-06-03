@@ -5,7 +5,27 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "plugins": [
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "$(PRODUCT_NAME) needs access to your Camera."
+        }
+      ]
+    ],
+    "android": {
+      "permissions": [
+        "android.permission.CAMERA"
+      ],
+      "package": "host.exp.exponent"
+    },
+    "ios": {
+      "infoPlist": {
+        "NSCameraUsageDescription": "$(PRODUCT_NAME) needs access to your Camera."
+      },
+      "bundleIdentifier": "io.expo.client"
+    }
   },
   "name": "300522"
 }
